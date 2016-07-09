@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="?attr/colorPrimary" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_relative"
+            android:layout_marginTop="150px"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:background="@color/white"
+            android:id="@+id/fristLine">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/zhangdanjiane"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:id="@+id/zhangdandingjin"
+                android:background="@null"
+                android:padding="10dp"
+                android:text=" 预订金额"
+                android:textColor="#BFBFBF"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fristLine"
+            android:layout_marginTop ="30px"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:background="@color/white"
+            android:id="@+id/secondLine">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zhangdanshijian"
+                android:layout_gravity="center"
+                android:padding="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                android:background="@null"
+                android:scrollHorizontally="true"
+                android:textColor="#BFBFBF"
+                android:id="@+id/yudingriqi"
+                android:padding="10dp"
+                android:text="预订日期"
+                android:paddingRight="0dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondLine"
+            android:layout_marginTop ="30px"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:id="@+id/thridLine">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tianjiazhangdan"
+                android:layout_gravity="center"
+                android:padding="4dp"/>
+
+            <Spinner
+                android:id="@+id/louceng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="选择楼层"
+                android:padding="10dp"
+                android:background="@null"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thridLine"
+            android:layout_marginTop ="30px"
+            android:layout_marginLeft="200px"
+            android:layout_marginRight="200px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shouruzhichu"
+                android:layout_gravity="center"
+                android:padding="4dp"/>
+
+            <Spinner
+                android:id="@+id/fanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:text="选择房号"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132px"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/queding"
+            android:id="@+id/srue"
+            />
+
+
+    </RelativeLayout>
+
